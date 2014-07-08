@@ -1,4 +1,4 @@
-zkui - Zookeeper UI Dashboard
+Zookeeper Manager Dashboard
 ====================
 A UI dashboard that allows CRUD operations on Zookeeper.
 
