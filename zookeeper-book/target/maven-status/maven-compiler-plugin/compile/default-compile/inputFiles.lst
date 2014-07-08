@@ -1,0 +1,9 @@
+/home/wanggang/develop/eclipse/work/zookeeper-guides/zookeeper-book/src/main/java/zx/soft/zookeeper/book/recovery/RecoveredAssignments.java
+/home/wanggang/develop/eclipse/work/zookeeper-guides/zookeeper-book/src/main/java/zx/soft/zookeeper/book/curator/CuratorMaster.java
+/home/wanggang/develop/eclipse/work/zookeeper-guides/zookeeper-book/src/main/java/zx/soft/zookeeper/book/Master.java
+/home/wanggang/develop/eclipse/work/zookeeper-guides/zookeeper-book/src/main/java/zx/soft/zookeeper/book/Client.java
+/home/wanggang/develop/eclipse/work/zookeeper-guides/zookeeper-book/src/main/java/zx/soft/zookeeper/book/curator/CuratorMasterSelector.java
+/home/wanggang/develop/eclipse/work/zookeeper-guides/zookeeper-book/src/main/java/zx/soft/zookeeper/book/Worker.java
+/home/wanggang/develop/eclipse/work/zookeeper-guides/zookeeper-book/src/main/java/zx/soft/zookeeper/book/recovery/OrphanStatuses.java
+/home/wanggang/develop/eclipse/work/zookeeper-guides/zookeeper-book/src/main/java/zx/soft/zookeeper/book/ChildrenCache.java
+/home/wanggang/develop/eclipse/work/zookeeper-guides/zookeeper-book/src/main/java/zx/soft/zookeeper/book/curator/CuratorMasterLatch.java
