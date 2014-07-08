@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"
+	debug="true">
+
+	<appender name="info-out" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="/mnt/zkui/zookeeper-ui.info.log" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%-5p] [%d] %c:%L - %m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelMatchFilter">
+			<param name="LevelToMatch" value="info" />
+			<param name="AcceptOnMatch" value="true" />
+		</filter>
+		<filter class="org.apache.log4j.varia.DenyAllFilter" />
+	</appender>
+
+	<appender name="error-out" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="/mnt/zkui/zookeeper-ui.error.log" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<param name="Threshold" value="error" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%-5p] [%d] %c:%L - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="debug-out" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="/mnt/zkui/zookeeper-ui.debug.log" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%-5p] [%d] %c:%L - %m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelMatchFilter">
+			<param name="LevelToMatch" value="debug" />
+			<param name="AcceptOnMatch" value="true" />
+		</filter>
+		<filter class="org.apache.log4j.varia.DenyAllFilter" />
+	</appender>
+
+	<root>
+		<!-- DEBUG < INFO < WARN < ERROR < FATAL -->
+		<level value="debug" />
+		<appender-ref ref="info-out" />
+		<appender-ref ref="debug-out" />
+		<appender-ref ref="error-out" />
+	</root>
+</log4j:configuration>
+
