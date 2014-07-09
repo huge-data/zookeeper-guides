@@ -4,12 +4,13 @@ import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 
+import org.flywaydb.core.Flyway;
 import org.javalite.activejdbc.Base;
 import org.slf4j.LoggerFactory;
 
 import zx.soft.zk.manager.domain.History;
 
-import com.googlecode.flyway.core.Flyway;
+//import com.googlecode.flyway.core.Flyway;
 
 public class Dao {
 

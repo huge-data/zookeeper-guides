@@ -12,6 +12,7 @@
 		<module>zookeeper-parent</module>
 		<module>zookeeper-book</module>
 		<module>zookeeper-manager</module>
+		<module>zookeeper-flyway</module>
 	</modules>
 
 	<build>
