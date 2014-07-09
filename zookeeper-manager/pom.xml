@@ -139,7 +139,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.deem.zkui.Main</mainClass>
+							<mainClass>zx.soft.zk.manager.core.ZookeeperManager</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
