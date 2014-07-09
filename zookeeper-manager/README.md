@@ -101,7 +101,7 @@ echo $MY_PROPERTY
 ====================
 Basic Role Based Authentication
 <br/>
-<img src="https://raw.github.com/wgybzbrobot/zookeeper-guides/master/zookeeper-manager/images/zkui-0.png"/>
+<img src="images/zkui-0.png"/>
 <br/>
 
 Dashboard Console
