@@ -106,33 +106,26 @@ Basic Role Based Authentication
 
 Dashboard Console
 <br/>
-<img src="https://raw.github.com/DeemOpen/zkui/master/images/zkui-1.png"/>
+<img src="images/zkui-1.png"/>
 <br/>
 
 CRUD Operations
 <br/>
-<img src="https://raw.github.com/DeemOpen/zkui/master/images/zkui-2.png"/>
+<img src="/images/zkui-2.png"/>
 <br/>
 
 Import Feature
 <br/>
-<img src="https://raw.github.com/DeemOpen/zkui/master/images/zkui-3.png"/>
+<img src="images/zkui-3.png"/>
 <br/>
 
 Track History of changes
 <br/>
-<img src="https://raw.github.com/DeemOpen/zkui/master/images/zkui-4.png"/>
+<img src="images/zkui-4.png"/>
 <br/>
 
 Status of Zookeeper Servers
 <br/>
-<img src="https://raw.github.com/DeemOpen/zkui/master/images/zkui-5.png"/>
+<img src="images/zkui-5.png"/>
 <br/>
 
-License & Contribution
-====================
-
-ZKUI is released under the Apache 2.0 license. Comments, bugs, pull requests, and other contributions are all welcomed!
-
-Thanks to : Jozef Krajčovič the creator of the zkui logo.
-http://creativecommons.org/licenses/by/3.0/
