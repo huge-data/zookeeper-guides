@@ -1,40 +1,38 @@
-Zookeeper Manager Dashboard
+Zookeeper管理界面
 ====================
-A UI dashboard that allows CRUD operations on Zookeeper.
+通过可视化界面对Zookeeper进行CRUD操作。
 
-Requirements
-====================
-Requires Java 7 to run.
+> java7运行环境
 
-Setup
+安装
 ====================
 1. mvn clean install
-2. Copy the config.cfg to the folder with the jar file. Modify it to point to the zookeeper instance. Multiple zk instances are coma separated.  eg: server1:2181,server2:2181. First server should always be the leader.
-3. Run the jar. ( nohup java -jar zkui-2.0-SNAPSHOT-jar-with-dependencies.jar & )
-4. <a href="http://localhost:9090">http://localhost:9090</a> 
+2. 将最终的jar文件和config.cfg放在一起，并在config.cfg中修改zookeeper运行节点，leader节点放在前面，如：server1:2181,server2:2181。
+3. 运行：nohup java -jar zkui-2.0-SNAPSHOT-jar-with-dependencies.jar & 
+4. 界面地址<a href="http://localhost:9090">http://localhost:9090</a> 
 
-Login Info
+登陆信息
 ====================
-username: admin, pwd: manager (Admin privileges, CRUD operations supported)
-username: appconfig, pwd: appconfig (Readonly privileges, Read operations supported)
+用户名: admin, 密码: manager (管理员权限，支持CRUD操作)
+用户名: appconfig, 密码: appconfig (只读权限, 支持只读操作)
 
-You can change this in the config.cfg
+配置config.cfg
 
-Technology Stack
+相关技术点
 ====================
-1. Embedded Jetty Server.
-2. Freemarker template.
-3. H2 DB.
-4. Active JDBC.
-5. JSON.
-6. SLF4J.
-7. Zookeeper.
-8. Apache Commons File upload.
-9. Bootstrap.
-10. Jquery.
-11. Flyway DB migration.
+1. 嵌入式Jetty服务
+2. Freemarker模板
+3. H2 DB
+4. JDBC接口
+5. JSON
+6. SLF4J日志管理
+7. Zookeeper分布式协同管理
+8. Apache Commons文件上传
+9. Bootstrap
+10. Jquery
+11. Flyway DB migration
 
-Features
+本项目优点
 ====================
 1. CRUD operation on zookeeper properties.
 2. Export properties.
@@ -47,7 +45,7 @@ Features
 9. LDAP authentication supported.
 10. Root node /zookeeper hidden for safety.
 
-Import File Format
+导入文件格式
 ====================
 #add property
 /appconfig/path=property=value
@@ -56,7 +54,7 @@ Import File Format
 
 You can either upload a file or specify a http url of the version control system that way all your zookeeper changes will be in version control. 
 
-Export File Format
+导出文件格式
 ====================
 /appconfig/path=property=value
 
@@ -74,7 +72,7 @@ If you want to use LDAP authentication provide the ldap url. This will take prec
 ldapUrl=ldap://<ldap_host>:<ldap_port>/dc=mycom,dc=com
 If you dont provide this then default roleSet file authentication will be used.
 
-REST call
+REST风格
 ====================
 A lot of times you require your shell scripts to be able to read properties from zookeeper. This can now be achieved with a http call. Password are not exposed via rest api for security reasons. The rest call is a read only operation requiring no authentication.
 
@@ -95,15 +93,15 @@ A shell script will call this via
 MY_PROPERTY="$(curl -f -s -S -k "http://localhost:9090/acd/appconfig?propNames=foo&host=`hostname -f`" | cut -d '=' -f 2)"
 echo $MY_PROPERTY
 
-Limitations
+局限性
 ====================
 1. ACLs are not yet fully supported
 
-Screenshots
+快照
 ====================
 Basic Role Based Authentication
 <br/>
-<img src="https://raw.github.com/DeemOpen/zkui/master/images/zkui-0.png"/>
+<img src="https://raw.github.com/wgybzbrobot/zookeeper-guides/master/zookeeper-manager/images/zkui-0.png"/>
 <br/>
 
 Dashboard Console

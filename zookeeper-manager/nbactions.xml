@@ -10,7 +10,7 @@
 			<goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
 		</goals>
 		<properties>
-			<exec.args>-classpath %classpath com.deem.zkui.Main</exec.args>
+			<exec.args>-classpath %classpath zx.soft.zk.manager.core.ZookeeperManager</exec.args>
 			<exec.executable>java</exec.executable>
 		</properties>
 	</action>
@@ -26,7 +26,7 @@
 		<properties>
 			<exec.args>-Xdebug
 				-Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address}
-				-classpath %classpath com.deem.zkui.Main</exec.args>
+				-classpath %classpath zx.soft.zk.manager.core.ZookeeperManager</exec.args>
 			<exec.executable>java</exec.executable>
 			<jpda.listen>true</jpda.listen>
 		</properties>
@@ -41,7 +41,7 @@
 			<goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
 		</goals>
 		<properties>
-			<exec.args>-classpath %classpath com.deem.zkui.Main</exec.args>
+			<exec.args>-classpath %classpath zx.soft.zk.manager.core.ZookeeperManager</exec.args>
 			<exec.executable>java</exec.executable>
 		</properties>
 	</action>

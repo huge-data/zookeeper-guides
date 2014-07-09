@@ -1,5 +1,5 @@
 log4j.appender.file=org.apache.log4j.RollingFileAppender
-log4j.appender.file.File=/mnt/zk-manager/zookeeper-manager.log
+log4j.appender.file.File=logs/zookeeper-manager.log
 log4j.appender.file.MaxFileSize=10MB
 log4j.appender.file.MaxBackupIndex=5
 log4j.appender.file.layout=org.apache.log4j.PatternLayout

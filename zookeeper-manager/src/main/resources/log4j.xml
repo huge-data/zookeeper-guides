@@ -4,7 +4,7 @@
 	debug="true">
 
 	<appender name="info-out" class="org.apache.log4j.DailyRollingFileAppender">
-		<param name="File" value="/mnt/zk-manager/zookeeper-ui.info.log" />
+		<param name="File" value="logs/zookeeper-ui.info.log" />
 		<param name="DatePattern" value="'.'yyyy-MM-dd" />
 		<layout class="org.apache.log4j.PatternLayout">
 			<param name="ConversionPattern" value="[%-5p] [%d] %c:%L - %m%n" />
@@ -17,7 +17,7 @@
 	</appender>
 
 	<appender name="error-out" class="org.apache.log4j.DailyRollingFileAppender">
-		<param name="File" value="/mnt/zk-manager/zookeeper-ui.error.log" />
+		<param name="File" value="logs/zookeeper-ui.error.log" />
 		<param name="DatePattern" value="'.'yyyy-MM-dd" />
 		<param name="Threshold" value="error" />
 		<layout class="org.apache.log4j.PatternLayout">
@@ -26,7 +26,7 @@
 	</appender>
 
 	<appender name="debug-out" class="org.apache.log4j.DailyRollingFileAppender">
-		<param name="File" value="/mnt/zk-manager/zookeeper-ui.debug.log" />
+		<param name="File" value="logs/zookeeper-ui.debug.log" />
 		<param name="DatePattern" value="'.'yyyy-MM-dd" />
 		<layout class="org.apache.log4j.PatternLayout">
 			<param name="ConversionPattern" value="[%-5p] [%d] %c:%L - %m%n" />
