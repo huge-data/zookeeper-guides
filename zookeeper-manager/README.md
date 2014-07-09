@@ -70,7 +70,7 @@ LDAP
 ====================
 If you want to use LDAP authentication provide the ldap url. This will take precedence over roleSet property file authentication.
 ldapUrl=ldap://<ldap_host>:<ldap_port>/dc=mycom,dc=com
-If you dont provide this then default roleSet file authentication will be used.
+If you don't provide this then default roleSet file authentication will be used.
 
 REST风格
 ====================
