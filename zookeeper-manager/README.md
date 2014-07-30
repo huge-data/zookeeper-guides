@@ -14,6 +14,7 @@ Zookeeper管理界面
 登陆信息
 ====================
 用户名: admin, 密码: manager (管理员权限，支持CRUD操作)
+
 用户名: appconfig, 密码: appconfig (只读权限, 支持只读操作)
 
 配置config.cfg
