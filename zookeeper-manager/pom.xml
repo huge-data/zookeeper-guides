@@ -99,8 +99,7 @@
 	<build>
 		<pluginManagement>
 			<plugins>
-				<!--This plugin's configuration is used to store Eclipse m2e settings 
-					only. It has no influence on the Maven build itself. -->
+				<!--该插件用于存储Eclipse的m2e设置，对于Maven构建项目没有影响。 -->
 				<plugin>
 					<groupId>org.eclipse.m2e</groupId>
 					<artifactId>lifecycle-mapping</artifactId>
@@ -172,6 +171,9 @@
 				</executions>
 			</plugin>
 		</plugins>
+
+		<finalName>zk-manager</finalName>
+
 	</build>
 
 </project>
