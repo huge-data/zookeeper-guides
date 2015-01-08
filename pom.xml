@@ -4,7 +4,7 @@
 
 	<groupId>zx.soft</groupId>
 	<artifactId>zookeeper-guides</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>pom</packaging>
 	<name>Zookeeper Guides[Build Pom]</name>
 
