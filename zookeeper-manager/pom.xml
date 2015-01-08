@@ -172,7 +172,7 @@
 			</plugin>
 		</plugins>
 
-		<finalName>zk-manager</finalName>
+		<finalName>${project.artifactId}-${project.version}</finalName>
 
 	</build>
 
